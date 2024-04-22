@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+* {
+  /* padding: 0; */
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+:root {
+	--blue: #03071e;
+	--white: #fff;
+	--grey: #f5f5f5;
+	--black1: #222;
+	--black2: #999;
+
+}
+
+html,
+body,
+#root,
+.app,
+.content {
+    height: 100%;
+   min-height: 100vh;
+	overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.app{
+    display: flex;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on Hover */
+::-webkit-scrollbar-track:hover {
+    background: #555;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.main-container {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  min-height: 50vh;
+}
+img {
+  width: 100%;
+}
+.welcome-text{
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+  line-height: 1.5;
+  margin-top: -1rem;
+  text-align: start;
+}
+.welcome-text h1{
+  font-size: 7rem;
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--blue);
+}
+.welcome-text p{
+  color: var(--black1);
+  margin-bottom: 10px;
+	font-size: 1.5rem;
+}
+.welcome-text button{
+    margin-top: 5px;
+    display: block;
+    padding: 10px 5rem;
+    border: none;
+    font-weight: 600;
+    color: var(--blue);
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.pagination-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 0.5em;
+  border-radius: 4px;
+  flex-wrap: wrap;
+}
+
+.pagination-flex-box li {
+  background-color: var(--grey);
+  padding: 0 1em;
+  border-radius: 3px;
+  color: var(--blue);
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.pagination-boxes {
+  padding: 0.5em 1em !important;
+}
+@media (max-width: 768px) {
+.main-container{
+flex-direction: column;
+}
+
+.welcome-text h1{
+  font-size: 4rem;
+}
+.welcome-text {
+  margin-right: 0;
+}
+.welcome-text p{
+  font-size: 1.1rem;
+}
+.navigation {
+		width: 100%;
+		left: -100%;
+		z-index: 1000;
+	}
+
+}
